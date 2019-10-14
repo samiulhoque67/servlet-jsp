@@ -1,0 +1,4 @@
+Project Description:
+
+The project starts by logging in "Login.jsp" .The "Login.jsp" sends action to LoginServlet.If the Login records are not  matched with the predefined records stored in a class,then servlet redirects to "Error.jsp".if matched,then a session will be created and the servlet handover it to a "Comments.jsp" page.This jsp page has a comment box.The comment is submitted to  another servlet called "Datainsert".Then in the "Datainsert" servlet,the max_id is retrieved from the table "user2" which is in the database  "mydb" .The "id" is incrementd each time the new data is inserted.The "username" is fetched from the session."comment" is retrievd from the form that is submitted in "Comments.jsp".Then "id","username" and "comment" is inserted into the "user2" table.After inserting data into the database a jsp page called "Display.jsp" shows that comment is inserted into the table of the database successfully.Finally session is destroyed.
+
